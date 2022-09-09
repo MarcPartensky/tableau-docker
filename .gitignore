@@ -1,1 +1,4 @@
 tableau.env
+*.rpm
+*.tar.gz
+tableau-server-container-setup-tool-2022.1.1
