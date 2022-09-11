@@ -2,10 +2,15 @@ version: "3.9"
 services:
   tableau:
     image: marcpartensky/tableau-server
+    # network_mode: host
     ports:
       - "8080:8080"
     env_file:
       - ./tableau.env
+  custom:
+    image: marcpartensky/tableau-custom
+    build: .
+
 
 # docker run \
 # -e LICENSE_KEY=<key> \
