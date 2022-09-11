@@ -13,6 +13,7 @@ RUN yum update -y
 WORKDIR /
 RUN yum install -y tableau-server-2022-1-6.x86_64.rpm
 
-RUN /opt/tableau/tableau_server/packages/scripts.2022-1-6/initialize-tsm --accepteula
+WORKDIR /opt/tableau/tableau_server/packages/scripts.20221.22.0902.1602
+RUN ./initialize-tsm --accepteula
 
 ENTRYPOINT [ "tableau-server" ]
