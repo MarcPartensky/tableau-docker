@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   tableau:
-    image: pvtmert/tableau
+    image: marcpartensky/tableau-server
     ports:
       - "8080:8080"
     env_file:
